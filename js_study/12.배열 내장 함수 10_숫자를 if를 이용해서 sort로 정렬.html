@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script>
+        let numbers = [0, 10, 100, 50, 200, 30];
+        
+        const compare = (a,b)=>{
+            if(a > b){
+                // 크다
+                return 1;
+            } 
+
+            if (a < b){
+                // 작다
+                return -1;
+            }
+            
+            // 같다
+            return 0;
+        };
+        numbers.sort(compare);  
+        // 원래 sort는 문자열, 즉 사전순으로 정렬
+
+        console.log(numbers);
+</script>
+    <title>Document</title>
+</head>
+<body>
+
+
+    
+</body>
+</html> 

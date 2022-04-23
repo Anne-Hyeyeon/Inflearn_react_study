@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script>
+        let person = {
+            name : "김혜연",
+            age : 31,
+            height : 164
+        }
+
+        const personKeys = Object.keys(person);
+        console.log(personKeys)
+        
+        for (let i = 0;i<personKeys.length;i++){
+            const curKey = personKeys[i];
+            const curValue = person[curKey];
+
+        console.log(`${curKey} : ${curValue}`);
+        }
+
+    </script>
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>
