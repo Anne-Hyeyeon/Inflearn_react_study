@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script>
+        // TODO : 학점 계산 프로그램
+        // 90점 이상 A+, 50점 이상 B+, 둘 다 아니면 F
+
+        let score = 100;
+
+        // score >= 90
+        //     ? console.log("A+")
+        //     : score >= 50
+        //     ? console.log("B+")
+        //     : console.log("F");
+        // 가독성이 매우 떨어지기 때문에, 중첩 삼항연산자는 if문으로 작성하는게 더 좋다.
+        
+        if (score >= 90) {
+            console.log("A+");
+        } else if (score >= 50) {
+            console.log("B+");
+        } else {
+            console.log("F");
+        }
+    </script>
+    <title>Document</title>
+</head>
+<body>
+</body>
+</html> 

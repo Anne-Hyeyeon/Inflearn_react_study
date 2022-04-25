@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script>
+    function isPositive (number, resolve, reject) {
+        setTimeout(() => {
+            if (typeof number === "number") {
+                // 성공
+                resolve(number >= 0 ? "양수" : "음수");
+            } else {
+                // 실패
+                reject("주어진 값이 숫자 값이 아닙니다");
+            }
+        }, 1000);
+    }
+    
+    isPositive(
+        [],
+        (res) => {
+            console.log("성공적으로 수행됨 : ", res);
+        },
+        (err) => {
+            console.log("실패 하였음 : ", err);
+        }
+    );
+
+    </script>
+    <title>Document</title>
+</head>
+<body>
+</body>
+</html> 

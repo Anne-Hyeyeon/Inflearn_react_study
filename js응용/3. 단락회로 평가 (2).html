@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script>
+        const getName = (person) => {
+            const name = person && person.name; // &&는 앞에 것이 true라도 뒤에 것이 true인지 봐야 함. 따라서 앞에 게 true일 경우 뒤에 것을 출력. 앞에 것이 false하다면 뒤에 걸 보지 않고 앞에 것 출력.  
+            return name || "객체가 아닙니다.";  // ||는 앞에 것이 true라면 그대로  true를 출력하게 됨. 하지만 앞의 것이 false라면 뒤의 true를 체크하고 나서 뒤의 값을 출력하게 됨.
+            // person 이 false가 되기 때문에, 뒤에 있는 person.name에는 아예 접근을 하지 않는다. 
+        };
+
+        let person;
+        const name = getName(person);
+        console.log(name);
+
+    </script>
+    <title>Document</title>
+</head>
+<body>
+</body>
+</html> 

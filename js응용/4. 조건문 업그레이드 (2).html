@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script>
+        // 객체 괄호표기법 이용해서 조건문 간단하게 만들기
+        const meal = {
+            한식 : "불고기",
+            양식 : "피자",
+            일식 : "초밥",
+            중식 : "탄탄멘",
+            인도식 : "카레",
+            이탈리아식 : "파스타"
+        }
+
+        const getMeal = (mealType) =>{
+            return meal[mealType] || "굶기";
+        };
+
+        // 객체 괄호표기법 : 객체 불러올 때 객체명[key] 하면 value가 불러와짐. 
+
+        console.log(getMeal("한식"));
+
+    </script>
+    <title>Document</title>
+</head>
+<body>
+</body>
+</html> 
